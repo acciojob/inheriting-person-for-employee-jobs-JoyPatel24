@@ -5,7 +5,7 @@ function Person(name, age) {
 }
 
 // method to log a person with the greeting of name and age
-Person.prototype.greet = function () {
+greet() {
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)	
 }
 
