@@ -10,8 +10,14 @@ Person.prototype.greet = function () {
 }
 
 function Employee(name, age, jobTitle) {
-	Person.call(this, name, age)
+	Person.call(this, name, age);
+	super(name, age)
 	this.jobTitle = jobTitle;
+
+	// Method to log a greeting with the person's job title
+  jobGreet() {
+    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+  }
 }
 
 // Do not change code below this line
