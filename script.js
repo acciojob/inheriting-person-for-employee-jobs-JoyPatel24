@@ -11,7 +11,6 @@ greet() {
 
 function Employee(name, age, jobTitle) {
 	Person.call(this, name, age);
-	super(name, age)
 	this.jobTitle = jobTitle;
 
 	// Method to log a greeting with the person's job title
